@@ -48,10 +48,11 @@ namespace Cinema
 
         public void print()
         {
+            Console.WriteLine();
             Console.WriteLine("****************************************************");
-            Console.WriteLine("Full name ...",Fio);
-            Console.WriteLine("Age..........", Age);
-            Console.WriteLine("Sex..........", Pol);
+            Console.WriteLine("Full name ..."+Fio);
+            Console.WriteLine("Age.........."+Age);
+            Console.WriteLine("Sex.........."+Pol.ToString());
             Console.WriteLine("****************************************************");
         }
 
