@@ -55,7 +55,7 @@ namespace Cinema
         public Spectator GetNewSpectator()
         {
             int age = _r.Next(15, 65);
-            int pol = _r.Next(0, 1);
+            int pol = _r.Next()%2;
             Sex sex;
             if (pol == 1)
             {

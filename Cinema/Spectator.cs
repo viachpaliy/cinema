@@ -17,11 +17,8 @@ namespace Cinema
         private Sex _sex;
         private int _age;
 
-        public Spectator()
+        public Spectator() : this("", -1, Sex.Men)
         {
-            _fio = "";
-            _sex = Sex.Men;
-            _age = -1;
         }
 
         public Spectator(string fio, int age, Sex sex)
@@ -57,5 +54,12 @@ namespace Cinema
         }
 
 
+        public override string ToString()
+        {
+            var str =
+                new StringBuilder(string.Format("Full name: {0} Age: {1} Sex: {2}\n", Fio,
+                    Age, Pol));
+            return str.ToString();
+        }
     }
 }
