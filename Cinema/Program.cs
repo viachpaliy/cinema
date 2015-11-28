@@ -12,11 +12,16 @@ namespace Cinema
         {
            
             SpectatorGenerator SG=new SpectatorGenerator();
-            Spectator S2 = SG.GetNewSpectator();
+            Spectator[] S2 =new Spectator[100];
+
+            for (int i = 0; i < S2.Length; i++)
+            {
+                S2[i] = SG.GetNewSpectator();
+            }
            
-           S2.Print();
             var F1 = new Film("Film", Genre.Action, 100, 50);
-            Console.WriteLine(F1);
+            var A1 = new Auditorium(1, F1, S2);
+            Console.WriteLine(A1);
             Console.ReadKey();
         }
     }

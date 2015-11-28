@@ -31,16 +31,16 @@ namespace Cinema
             _sex = sex;
         }
 
-        string Fio {
+      public  string Fio {
             get { return _fio; }
             set { _fio = value; }
         }
-        int Age {
+       public int Age {
             get { return _age; }
             set { _age = value; }
         }
 
-        Sex Pol
+      public  Sex Pol
         {
             get { return _sex; }
             set { _sex = value; }
