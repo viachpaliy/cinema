@@ -46,7 +46,7 @@ namespace Cinema
             set { _sex = value; }
         }
 
-        public void print()
+        public void Print()
         {
             Console.WriteLine();
             Console.WriteLine("****************************************************");

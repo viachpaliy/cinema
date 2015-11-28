@@ -10,13 +10,13 @@ namespace Cinema
     {
         static void Main(string[] args)
         {
-           Spectator S1 = new Spectator("Petrenko", 29, Sex.Men);
+           
             SpectatorGenerator SG=new SpectatorGenerator();
             Spectator S2 = SG.GetNewSpectator();
-            Spectator S3 = SG.GetNewSpectator();
-            S1.print();
-           S2.print();
-            S3.print();
+           
+           S2.Print();
+            var F1 = new Film("Film", Genre.Action, 100, 50);
+            Console.WriteLine(F1);
             Console.ReadKey();
         }
     }
